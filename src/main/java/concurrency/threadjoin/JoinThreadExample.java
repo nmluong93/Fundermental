@@ -1,7 +1,5 @@
 package concurrency.threadjoin;
 
-import java.util.Random;
-
 public class JoinThreadExample implements Runnable {
 
 
@@ -10,7 +8,6 @@ public class JoinThreadExample implements Runnable {
 		try {
 			Thread.sleep(10_000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		System.out.println(String.format("[%s] finished", Thread.currentThread().getName()));
